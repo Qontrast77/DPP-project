@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    padding: 0;
+    margin: 0;font-family: "Montserrat", sans-serif;
+   
+    background-color: #e7e7e7e7;
+    color: #171718;
+}
+a {
+    text-decoration: none;
+}
+textarea {
+    font-family: "Montserrat", sans-serif;
+}
+button {
+    font-family: "Montserrat", sans-serif;
+}
+li {
+    margin: 0;
+    padding: 0;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1500px;
+    margin: auto;
+    width: 100%;
+}
+@media screen and (max-width:1500px) {
+    .container {
+        max-width: 90%;
+    }
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:40px 0px;
+}
+.nav__line {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header__title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+a {
+
+    transition: .3s all ease;
+}
+
+.nav__line a {
+    color: #c77638;
+    text-decoration:none;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #c77638;
+    font-size: 25px;
+}
+.nav__line a:hover {
+    padding-bottom: 1px;
+}
+
+.aboutMe__block {
+    height: 100vh;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header__line {
+    border-bottom: 1px solid #ccc2c235;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #e7e7e7e7;
+    color: #171718;
+}
+.aboutMe__title h1 {
+    font-size: 44px;
+}
+.aboutMe__title h1 span {
+    color: #ff7000;
+}
+
+.aboutMe__text {
+    font-size: 26px;
+}
+.aboutMe__link {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff7000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: 500;
+    letter-spacing: .15px;
+    padding: 15px 30px;
+    border: 1px solid #ff7000;
+}
+.aboutMe__link:hover {
+    transition: .5s all ease-in-out;
+    background-color: transparent;
+    color: #ff9340;
+}
+.about__cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 100%;
+    border: 2px solid #c77638;
+    padding: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    box-shadow: 0px 0px 8px 4px rgba(203, 141, 74, 0.432);
+}
+
+.card__title {
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.flex__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex__line .flex__line-img {
+    flex: 0 0 50%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: block;
+    max-width: 100%;
+}
+.flex__line ul {
+    flex: 0 0 45%;
+}
+.card__list {
+    margin-left: 20px;
+}
+.card__list-item {
+    margin: 50px 0px;
+    font-size: 30px;
+    list-style-type: circle;
+}
+img {
+    max-width: 100%;
+}
+.aboutMe__subtext {
+    text-align: right;
+    
+}
+.about__me-cont {
+    display: flex;
+    align-items: center;
+}
+.aboutMe__img {
+    flex: 0 0 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.aboutMe__img img {
+    max-width: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .header__title {
+        font-size: 25px;
+    }
+    .about__me-cont {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .aboutMe__block {
+        align-items: center;
+    }
+    .aboutMe__block {
+        height: initial;
+    }
+    
+    .nav__line a {
+        font-size: 18px;
+    }
+    .about__cards{
+        flex-wrap: wrap;
+    }
+    .card {
+        flex: 0 0 100%;
+    }
+    .card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .aboutMe__title h1 {
+        font-size: 30px;
+    }
+    .aboutMe__text {
+        font-size: 20px;
+    }
+    .flex__line {
+        flex-wrap: wrap;
+    }
+    .flex__line .flex__line-img {
+        flex: 0 0 100%;
+    }
+    .flex__line ul {
+        flex: 0 0 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .header__wrapper {
+        display: block;
+    }
+    .aboutMe__subtext {
+        display: block;width: 100%;
+    }
+    .card__list-item {
+        margin: 15px 0px;
+        font-size: 19px;
+    }
+    .card {
+        padding: 30px;
+    }
+    .card__title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .aboutMe__link {
+        padding: 15px 0px;
+        width: 100%;
+    }
+    
+    .aboutMe__img {
+        flex: 0 0 100%;
+    }
+    .about__me-cont {
+        padding-top: 150px;
+    }
+    .header__title {
+        margin-bottom: 10px;
+    }
+    .nav__line {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .header__wrapper {
+        padding: 20px 0px;
+    }
+    .nav__line a {
+        font-size: 16px;
+    }
+    .header__title {
+        text-align: right;
+    }
+
+}
